@@ -1,0 +1,187 @@
+package com.zqkc.controller;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.zqkc.model.User;
+import com.zqkc.service.IBannerService;
+import com.zqkc.service.IBusinessService;
+import com.zqkc.service.ICustomerService;
+import com.zqkc.service.INavigationService;
+import com.zqkc.service.IProjectService;
+import com.zqkc.service.IRecruitService;
+import com.zqkc.service.IServicesService;
+import com.zqkc.service.IUserService;
+
+@Controller
+@RequestMapping("/user")
+public class UserController {
+
+	@RequestMapping("/login")
+	public String login(User user,HttpSession session,HttpServletRequest req) throws Exception {
+		
+		if(null != user.getAccount() && null != user.getPassword()){
+			User loginUser = userService.doLogin(user);
+			if(loginUser!=null){				
+				session.setAttribute("user", loginUser);//登录成功后，将用户信息存入session
+				String loginIp = req.getLocalAddr();//获取访问主机地址
+				Date date = new Date();
+				SimpleDateFormat dfm = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+				String time = dfm.format(date);
+				//更新用户的数据
+				loginUser.setLoginip(loginIp);
+				loginUser.setLogintime(time);
+				loginUser.setStatus((byte)0);//状态修改为0 在线
+				loginUser.setIslock((byte)0);//islock修改问为0 锁定，不允许重复登录
+				userService.doUpdate(loginUser);
+				int sum = userService.countUser();
+				session.setAttribute("sum", sum);
+				if(loginUser.getAccount().equals("admin")){
+					session.setAttribute("addUser", "user/addUser");
+				}
+				return "redirect:index";//登录成功之后的跳转
+			}
+		}
+		
+		return "redirect:logon";//登录失败之后的一个重定向	
+	}
+	
+	
+	
+	/**
+	 * 用户退出，清空session
+	 * @param session
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/logout")
+	public String logout(HttpSession session) throws Exception{
+		if(session.getAttribute("user")!=null){
+			User user = (User) session.getAttribute("user");
+			user.setIslock((byte)1);
+			user.setStatus((byte)1);
+			userService.doUpdate(user);
+		}
+		return "login";
+	}
+
+	@RequestMapping("/logon")
+	public String logon() throws Exception{
+		return "login";
+	}
+	/**
+	 * 关闭窗口退出
+	 * @param session
+	 * @param response
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/goout")
+	public String goOut(HttpSession session,HttpServletResponse response) throws Exception {
+		response.setCharacterEncoding("utf-8");
+		if(session.getAttribute("user")!=null){
+			User user = (User) session.getAttribute("user");
+			user.setIslock((byte)1);
+			user.setStatus((byte)1);
+			userService.doUpdate(user);
+			session.removeAttribute("user");
+			response.getWriter().println("{msg:'success'}");
+		}
+		else{
+			response.getWriter().println("{msg:'failed'}");
+		}
+		return null;
+	}
+	/**
+	 * 往后台跳转
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/index")
+	public ModelAndView index(HttpSession session) throws Exception {
+		ModelAndView md = new ModelAndView();
+		if(session.getAttribute("user")!=null){
+			md.addObject("banners", bannerService.countBanners());
+			md.addObject("business", businessService.countBusiness());
+			md.addObject("customers", customerService.countCustomers());
+			md.setViewName("index");
+		}
+		else{
+			md.setViewName("login");
+		}
+		return md;
+	}
+	/**
+	 * 添加用户
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/addUser")
+	public String addUser() throws Exception {
+		return "adduser";
+	}
+	/**
+	 * 保存用户信息
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/save")
+	public String save() throws Exception{
+		return "";
+	}
+
+	@Autowired
+	private IUserService userService;
+	@Autowired
+	private IBannerService bannerService;
+	@Autowired
+	private IBusinessService businessService;
+	@SuppressWarnings("unused")
+	@Autowired
+	private INavigationService navigationService;
+	@SuppressWarnings("unused")
+	@Autowired
+	private IServicesService servicesService;
+	@SuppressWarnings("unused")
+	@Autowired
+	private IProjectService projectService;
+	@SuppressWarnings("unused")
+	@Autowired
+	private IRecruitService recruitService;
+	@Autowired
+	private ICustomerService customerService;	
+	
+	public void setCustomerService(ICustomerService customerService) {
+		this.customerService = customerService;
+	}
+	public void setUserService(IUserService userService) {
+		this.userService = userService;
+	}
+	public void setBannerService(IBannerService bannerService) {
+		this.bannerService = bannerService;
+	}
+	public void setBusinessService(IBusinessService businessService) {
+		this.businessService = businessService;
+	}
+	public void setNavigationService(INavigationService navigationService) {
+		this.navigationService = navigationService;
+	}
+	public void setServicesService(IServicesService servicesService) {
+		this.servicesService = servicesService;
+	}
+	public void setProjectService(IProjectService projectService) {
+		this.projectService = projectService;
+	}
+	public void setRecruitService(IRecruitService recruitService) {
+		this.recruitService = recruitService;
+	}
+	
+}

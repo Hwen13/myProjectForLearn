@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zqkc.dao.INavigationDao">
+		
+		<!-- 添加导航 -->
+		<insert id="addNavigation" parameterType="Navigation"  >
+			insert into navigation(name,title,isdel,power,url,pid)values(#{name},#{title},#{isdel},#{power},#{url},#{pid});
+		</insert>
+		<!-- 删除导航 -->
+		<delete id="deleteNavigation" parameterType="Navigation" >
+			delete from navigation where id=#{id}
+		</delete>
+		<!-- 更新导航 -->
+		<update id="updateNavigation" parameterType="Navigation" >
+			update navigation 
+			<set>
+				<if test="name !=null">
+					name=#{name}
+				</if>
+				<if test="title !=null">
+					title=#{title}
+				</if>
+				<if test="isdel !=null">
+					isdel=#{isdel}
+				</if>
+				<if test="url !=null">
+					url=#{url}
+				</if>
+				<if test="pid !=null">
+					pid=#{pid}
+				</if>
+				where id=#{id}
+			</set>
+		</update>
+		<!-- 查询导航ID编号 -->
+		<select id="findid" parameterType="Navigation" resultType="int">
+			select id from navigation where name=#{name} and title=#{title}
+		</select>
+		<!-- 查询导航 -->
+		<select id="findNavigation" parameterType="Navigation" resultType="Navigation">
+			select *from navigation where id=#{id}					
+		</select>
+		<!-- 查询导航 -->
+		<select id="findNavigationAll" resultType="Navigation">
+			select *from navigation 				
+		</select>
+		
+
+</mapper>

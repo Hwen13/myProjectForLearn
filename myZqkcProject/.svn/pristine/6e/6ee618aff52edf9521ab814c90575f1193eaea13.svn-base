@@ -1,0 +1,88 @@
+/**
+ * 
+ */
+package com.zqkc.controller;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.zqkc.service.impl.BannerfileService;
+
+/**
+ * @author Administrator
+ *
+ */
+@Controller
+@RequestMapping("/bannerfile")
+public class BannerfileController {
+	
+	@Autowired
+	public BannerfileService bannerfileService;
+	
+	public void setBannerfileService(BannerfileService bannerfileService) {
+		this.bannerfileService = bannerfileService;
+	}
+	
+	/*****************************页面跳转**********************************/
+	
+	@RequestMapping("/index")
+	public String toIndex(HttpSession session){
+		
+		
+		return "redirect:/index";
+	}
+	
+	
+	/**
+	 * 进入轮播图列表页面
+	 * @param session
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/toBannerfile")
+	public ModelAndView toBannerfile(HttpSession session) throws Exception{
+		ModelAndView md = new ModelAndView();
+		md.setViewName("carousel_list");
+		
+		return md;
+	}
+	
+	/**
+	 * 进入添加轮播图页面
+	 * @param session
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/addBannerfile")
+	public ModelAndView addBannerfile(HttpSession session)throws Exception{
+		ModelAndView md = new ModelAndView();
+		md.setViewName("carousel_add");
+		return md;
+	}
+	
+	/**
+	 * 更新轮播图页面
+	 * @param session
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/updateBannerfile")
+	public ModelAndView updateBannerfile(HttpSession session)throws Exception{
+		ModelAndView md = new ModelAndView();
+		md.setViewName("carousel_update");
+		return md;
+	}
+	/***************************业务数据处理***************************************/
+	
+	
+	
+	
+	/**************************重定向页面跳转**************************************/
+	
+	
+	
+}

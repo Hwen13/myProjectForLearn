@@ -1,0 +1,275 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Matrix Admin</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="publics/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="publics/css/bootstrap-responsive.min.css" />
+  <link rel="stylesheet" href="publics/css/fullcalendar.css" />
+  <link rel="stylesheet" href="publics/css/matrix-style.css" />
+  <link rel="stylesheet" href="publics/css/matrix-media.css" />
+  <link href="publics/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="publics/css/jquery.gritter.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="publics/css/uniform.css" />
+<link rel="stylesheet" href="publics/css/zqkc-admin.css" />
+</head>
+<body>
+<div id="header">
+  <h1><a href="dashboard.html">Matrix Admin</a></h1>
+</div>
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">欢迎登录</span><b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="#"><i class="icon-user"></i> 我的资料</a></li>
+        <li class="divider"></li>
+        <li><a href="#"><i class="icon-check"></i> 我的工作</a></li>
+        <li class="divider"></li>
+        <li><a href="login.html"><i class="icon-key"></i> 注销</a></li>
+      </ul>
+    </li>
+    <li class="dropdown" id="menu-messages"><a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle"><i class="icon icon-envelope"></i> <span class="text">信息</span> <span class="label label-important">5</span> <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a class="sAdd" title="" href="#"><i class="icon-plus"></i> 新的消息</a></li>
+        <li class="divider"></li>
+        <li><a class="sInbox" title="" href="#"><i class="icon-envelope"></i> 收件箱</a></li>
+        <li class="divider"></li> 
+        <li><a class="sOutbox" title="" href="#"><i class="icon-arrow-up"></i>  发件箱</a></li>
+        <li class="divider"></li>
+        <li><a class="sTrash" title="" href="#"><i class="icon-trash"></i> 垃圾箱</a></li>
+      </ul>
+    </li>
+    <li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">设置</span></a></li>
+    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">退出登录</span></a></li>
+  </ul>
+</div>
+<div id="search">
+  <input type="text" placeholder="Search here..."/>
+  <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+</div>
+<!--左边菜单栏 start-->
+<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+  <ul>
+    <li class="submenu "><a href="index.html"><i class="icon icon-home"></i> <span>首页</span></a> </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-signal"></i> <span>导航栏管理</span><span class="label label-important">2</span></a> 
+      <ul>
+        <li> <a href="navigation_add.html">
+        添加导航</a></li>
+        <li><a href="navigation_list.html">导航列表</a></li>
+      </ul>
+    </li>
+    <li class="submenu  "> <a href="#"><i class="icon icon-inbox"></i> <span>轮播管理</span><span class="label label-important">2</span></a> 
+      <ul>
+        <li><a href="carousel_add.html">添加轮播</a></li>
+        <li>
+        	<a href="carousel_list.html">轮播列表</a></li>
+      </ul>
+    </li>
+    <li class="submenu "><a href="#"><i class="icon icon-th"></i> <span>平台展示</span><span class="label label-important">2</span></a>
+      <ul>
+        <li><a href="platform_add.html">添加平台</a></li>
+        <li><a href="platform_list.html">平台列表</a></li>
+      </ul>
+    </li>
+  <li class="submenu "> <a href="#"><i class="icon icon-th-list"></i> <span>项目案例</span> <span class="label label-important">3</span></a>
+       <ul>
+       <li><a href="projectAdd.html">添加项目案例</a></li>
+        <li><a href="Functionlist.html">功能模块列表</a></li>
+         <li><a href="projectSelect.html">信息展示列表</a></li>
+      </ul>
+    </li>
+    
+    <li class="submenu"><a href="#"><i class="icon icon-tint"></i> <span>广告管理</span><span class="label label-important">2</span></a>
+      <ul>
+        <li><a href="#">添加广告</a></li>
+        <li><a href="#">广告列表</a></li>
+      </ul>
+    </li>
+    <li class="submenu active"><a href="#"><i class="icon icon-pencil"></i> <span>招聘管理</span><span class="label label-important">2</span></a>
+      <ul>
+        <li><a href="recruit-add.html">添加招聘</a></li>
+        <li><a href="recruit_list.html">招聘列表</a></li>
+      </ul>
+    </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>业务客户</span> <span class="label label-important">2</span></a>
+      <ul>
+        <li><a href="customer_add.html">添加客户</a></li>
+        <li><a href="customer_list.html">客户列表</a></li>
+      </ul>
+    </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-coffee"></i> <span>服务管理</span> <span class="label label-important">2</span></a>
+      <ul>
+        <li><a href="services_add.html">添加服务</a></li>
+        <li><a href="services_list.html">服务列表</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<!--左边菜单栏 end-->
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="index.html" class="tip-bottom" data-original-title="前往首页">
+    	<i class="icon-home"></i> 首页</a> <a href="recruit_list.html">招聘管理</a> 
+    	<a href="#" class="current">修改招聘信息</a> </div>
+ 	
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span12">
+        				<div class="widget-box">
+        <div class="widget-title"> 
+        	<span class="icon"><a href="recruit_list.html">
+        		<button type="submit" class="btn btn-mini btn-success">返回招聘列表</button></a></span>
+          <h5>修改招聘信息</h5>         		     
+        </div>
+        <div class="widget-content nopadding">
+          <form action="#" method="get" class="form-horizontal">
+            <div class="control-group clearboth">
+              <label class="control-label">岗位名：</label>
+              <div class="controls">
+                <input type="text" class="span4" placeholder="例：php工程师" />
+              </div>
+            </div>
+             <div class="control-group1">
+             	
+              <label class="control-label">招聘要求：</label>
+              <div class="controls">
+                <input type="text" name="demand"  class="span4" placeholder="招聘要求"/>
+                <a id="btn1-add" class="btn btn-primary">追加</a>&nbsp;&nbsp;</span><a id="btn1-del" class="btn btn-danger">删除</a>
+                
+              </div>             
+              <label id="zch" class="control-label"></label>             
+              <div class="controls">
+                <input type="text" name="demand" class="span4" placeholder="招聘要求" /><br><br/>     					
+              </div>             
+             </div>
+             	
+             
+             <div class="control-group">
+              <label class="control-label">岗位职责1：</label>
+              <div class="controls">
+                <input type="text" name="neaten" class="span4" placeholder="1.整理代码" /><a id="btn2-add" 
+                class="btn btn-primary">追加</a>&nbsp;&nbsp;</span><a id="btn2-del" class="btn btn-danger">删除</a>
+              </div>
+              <label class="control-label">2：</label>
+              <div class="controls">
+                <input type="text" name="neaten" class="span4" placeholder="2.整理文档" /><br><br/>
+               
+              </div>
+            </div>   
+             <div class="control-group">
+              <label class="control-label">相关信息：</label>
+              <div class="controls">                
+                <textarea class="span4" placeholder="该职位面向所有人"></textarea>
+              </div>
+            </div>
+            <div class="form-actions form-horizontal">          
+             	 <button type="submit" class="btn btn-success">提交</button>
+               <button type="reset" class="btn btn-success">重置</button>           
+            </div>
+          </form>
+        </div>       
+      </div>
+     			
+        </div>
+      </div>
+    </div>
+  
+
+<!--end-Footer-part--> 
+
+<script src="publics/js/jquery.min.js"></script> 
+<script src="publics/js/jquery.ui.custom.js"></script> 
+<script src="publics/js/bootstrap.min.js"></script> 
+<script src="publics/js/jquery.validate.js"></script> 
+<script src="publics/js/jquery.wizard.js"></script> 
+<script src="publics/js/matrix.js"></script> 
+<script src="publics/js/matrix.wizard.js"></script>
+
+<script type="text/javascript">
+
+				$(function(){
+				
+						$('#btn1-add').click(function(){
+								$('input[name="demand"]').last().after("<div class='btn3'><br/><input name='demand' type='text' class='span4' /></div>")												
+						})					
+						$('#btn1-del').click(function(){
+								
+										
+										var int = $('.btn3').length
+										if(int==0){
+												alert("已经不能再删了！")
+										}else{
+												//$('input[name="demand"]').last().remove()
+												$('.btn3').last().remove()
+												
+										}
+		
+						})
+						
+						
+				
+							$('#btn2-add').click(function(){
+								$('input[name="neaten"]').last().after("<div class='btn4'><br/><input name='neaten' type='text' 				class='span4' /></div>")												
+						})					
+						$('#btn2-del').click(function(){
+								
+									
+										var int = $('.btn4').length
+										if(int==0){
+												alert("已经不能再删了！")
+										}else{
+											
+												$('.btn4').last().remove()
+												
+										}
+		
+						})
+						
+						
+					
+				})
+	
+
+
+  function goPage (newURL) {
+
+      // if url is empty, skip the menu dividers and reset the menu selection to default
+      if (newURL != "") {
+      
+          // if url is "-", it is this page -- reset the menu:
+          if (newURL == "-" ) {
+              resetMenu();            
+          } 
+          // else, send page to designated URL            
+          else {  
+            document.location.href = newURL;
+          }
+      }
+  }
+
+// resets the menu selection upon entry to this page:
+			function resetMenu() {
+			   document.gomenu.selector.selectedIndex = 2;
+			}
+</script>
+<script>
+ $(window).bind('beforeunload',function(){
+       $.ajax({
+	         url:"<%=basePath%>user/goout",
+	         type:"post",	         
+	         success:function(data){
+             	alert(data.msg);
+             }
+     		});
+ });
+</script>
+</body>
+</html>

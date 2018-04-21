@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type-root>
+  <types>
+      <type>PROS_P_E/(经济效益)</type>
+      <type>PROS_P_C/(社会效益)</type>
+      <type>PROS_P_H/(人类效益)</type>      
+  </types>
+</type-root>

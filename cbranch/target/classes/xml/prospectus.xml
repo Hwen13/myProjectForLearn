@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type-root>
+  <types>
+      <type>PROS_E_A/(经济计划A)</type>
+      <type>PROS_E_B/(经济计划B)</type>
+      <type>PROS_H_A/(人类计划A)</type>
+      <type>PROS_H_B/(人类计划B)</type>
+      <type>PROS_C_A/(社会计划A)</type>
+      <type>PROS_C_B/(社会计划B</type>
+  </types>
+</type-root>

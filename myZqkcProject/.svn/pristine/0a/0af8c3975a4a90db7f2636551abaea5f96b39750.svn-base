@@ -1,0 +1,57 @@
+package com.zqkc.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.zqkc.model.Project;
+
+/**
+ * 
+ * @author hw 项目案例Dao层接口
+ *
+ */
+@Repository
+public interface IProjectDao {
+
+	/**
+	 * 添加项目案例
+	 * @param project
+	 * @return
+	 * @throws Exception
+	 */
+	public int addProject(Project project) throws SQLException;
+	
+	/**
+	 * 删除项目案例
+	 * @param id
+	 * @return
+	 * @throws SQLException
+	 */
+	public int deleteProject(int id) throws SQLException;
+	
+	/**
+	 * 更新项目案例 
+	 * @param id
+	 * @return
+	 * @throws SQLException
+	 */
+	public int updateProject(int id) throws SQLException;
+	
+	/**
+	 * 查找所有项目案例
+	 * @param s
+	 * @return
+	 * @throws SQLException
+	 */
+	public List<Project> findProjectAll(String s) throws SQLException;
+	
+	/**
+	 * 根据ID查找项目案例
+	 * @param id
+	 * @return
+	 * @throws SQLException
+	 */
+	public Project findProjectById(int id) throws SQLException;
+}

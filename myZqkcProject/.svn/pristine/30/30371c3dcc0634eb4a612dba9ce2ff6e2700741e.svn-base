@@ -1,0 +1,206 @@
+package com.zqkc.controller;
+
+import java.util.List;
+
+
+
+import javax.servlet.http.HttpSession;
+
+
+
+import org.springframework.stereotype.Controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+
+import com.zqkc.model.Project;
+import com.zqkc.service.impl.ProjectService;
+
+@Controller
+@RequestMapping("/project")
+public class ProjectController {
+	/**
+	 * 添加项目案例处理
+	 * @param session
+	 * @param project
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/addProject")	
+	public ModelAndView addProjectController(HttpSession session,Project project) throws Exception{
+
+		ModelAndView mv=new ModelAndView();	
+		ProjectService proService= new ProjectService();
+		System.out.println("进到这里来了！！");
+		boolean flag=proService.doAddProject(project);
+		if(flag){
+			
+			mv.addObject("messageAdd","添加成功！！");
+			mv.setViewName("projectSuccess");
+
+		}else{
+			
+			mv.addObject("messageAdd","添加失败！！");
+			mv.setViewName("projectFailure");
+
+		}
+		return mv;		
+	}
+	/**
+	 * 重新定向到添加项目案例页面
+	 * @param session
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/addProjectTry")
+	public ModelAndView tryss(HttpSession session) throws Exception{
+		System.out.println("UserController");
+		ModelAndView mv=new ModelAndView();
+		mv.setViewName("projectAdd");
+		return mv;
+	}
+	/**
+	 * 删除项目案例
+	 * @param session
+	 * @param id
+	 * @return
+	 * @throws Exception
+	 */
+	
+	@RequestMapping("/deleteProject")	
+	public ModelAndView deleteProjectController(HttpSession session,int id) throws Exception{
+		ModelAndView mv= new ModelAndView();
+		ProjectService proService= new ProjectService();
+		boolean flag=proService.doDeleteProject(id);
+		if(flag){
+			mv.addObject("messageDelete","删除成功！！");
+			mv.setViewName("projectSuccess");
+		}else{
+			mv.addObject("messageDelete","删除失败！！");
+			mv.setViewName("projectFailure");
+		}
+		return mv;		
+	}
+	/**
+	 * 更新项目案例
+	 * @param session
+	 * @param id
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/updateProject")	
+	public ModelAndView updateProjectController(HttpSession session,int id) throws Exception{
+		System.out.println("updateProject!!");
+		ModelAndView mv= new ModelAndView();
+		ProjectService proService= new ProjectService();
+		boolean flag = proService.doUpdateProject(id);
+		if(flag){
+			mv.addObject("messageUpdate","修改成功！！");
+			mv.setViewName("projectSuccess");
+		}else{
+			mv.addObject("messageUpdate","修改失败！！");
+			mv.setViewName("projectFailure");
+		}
+		return mv;		
+	}
+	
+	 @RequestMapping("/updateProjectTry")
+	 public ModelAndView  updateProjectTry() throws Exception{
+		 ModelAndView mv = new ModelAndView();
+		 mv.setViewName("projectUpdate");
+		return mv;	 
+	 }	
+	/**
+	 * 根据ID查询项目案例
+	 * @param session
+	 * @param id
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/findProjectById")
+	public ModelAndView findProjectByIdController(HttpSession session,int id) throws Exception{
+		
+		ModelAndView mv= new ModelAndView();
+		ProjectService proService= new ProjectService();
+		Project project=proService.doFindProjectById(id);
+		if(null!=project){
+			mv.addObject("findResult", "project");
+			mv.setViewName("//要返回的页面");
+		}
+		else{
+			mv.addObject("findError", "查找的结果不存在！！");
+			mv.setViewName("返回报错页面");
+		}
+		return mv;	
+	}
+
+	/**
+	 * 查找所有的项目案例
+	 * @param session
+	 * @param s
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/findProjetcAll")
+	public ModelAndView findProjetcAll(HttpSession session,String s) throws Exception{
+		ModelAndView mv= new ModelAndView();
+		ProjectService proService= new ProjectService();
+		List<Project> listProject=proService.doFindProjectAll(s);
+		if(!listProject.isEmpty()){
+			mv.addObject("findResults", "listProject");
+			mv.setViewName("//要返回的页面");
+		}else{
+			mv.addObject("findErrors", "查找的结果不存在！！");
+			mv.setViewName("返回报错页面");
+		}
+		return mv;
+		
+	}
+	
+	/**
+	 *重定向到项目案例列表
+	 * @param session
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/projectSelect")
+	public ModelAndView projectSelect(HttpSession session) throws Exception{
+		System.out.println("UserController");
+		ModelAndView mv=new ModelAndView();
+		mv.setViewName("projectSelect");
+		return mv;
+	
+	}
+	/**
+	 * 从其他Controller返回首页
+	 * @param session
+	 * @return
+	 * @throws Exception
+	 */
+ @RequestMapping("/userBack")
+ public ModelAndView userBack(HttpSession session) throws Exception{
+	 
+	 ModelAndView mv= new ModelAndView();
+	 mv.setViewName("index");
+	 return mv;
+	 
+	
+	 
+ }
+
+ /**
+  * 重定向返回功能列表
+  * @param session
+  * @return
+  */
+ 
+@RequestMapping("projectFunctionList")
+public ModelAndView projectFunctionList(HttpSession session) throws Exception{
+	
+	ModelAndView mv= new ModelAndView();
+	mv.setViewName("projectFunctionList");
+	return mv;
+}
+	
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zqkc.dao.IimagesDao">
+	<!-- 添加业务图片 -->
+	<insert id="addImages" parameterType="Images" flushCache="true">
+		insert into images (filename,path,pid,isdel) values (#{filename},#{path},#{pid},#{isdel})
+	</insert>
+	<!-- 删除业务图片 -->
+	<update id="deleteImages" parameterType="int">
+		
+	</update>
+	<!-- 批量删除业务图片 -->
+	<update id="deleteImagesList">
+		
+	</update>
+	<!-- 修改业务图片 -->
+	<update id="updateImages" parameterType="Images">
+		
+	</update>
+	<!-- 根据business的id查找图片地址 -->
+	<select id="findByIdImages" parameterType="Business" resultType="String">
+		select path from images where pid=#{id} and isdel=1
+	</select>
+	<!-- 查询所有图片 -->
+	<select id="findAllImages" resultType="Images">
+		 select * from images where isdel=1
+	</select>
+	<!-- 统计业务图片数量 -->
+	<select id="getImages">
+		select count(id) from images where isdel=1
+	</select>
+</mapper>

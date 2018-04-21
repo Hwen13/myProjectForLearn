@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zqkc.dao.ICustomerDao">
+	<!-- 添加客户信息 -->
+	<insert id="addCustomer" parameterType="Customer" flushCache="true">
+		insert into customer (name,title,description,remark,path,url,power,isdel) values (#{name},#{title},#{description},#{remark},#{path},#{url},#{power},#{isdel})
+	</insert>
+	<!-- 查询所有客户信息 -->
+	<select id="findCustomer" resultType="Customer">
+		select * from customer order by power
+	</select>
+	<!-- 根据id查询客户信息 -->
+	<select id="findByCustomer" parameterType="int" resultType="Customer">
+		select * from customer where id = #{id}
+	</select>
+	<!-- 修改客户信息 -->
+	<update id="updateCustomer" parameterType="Customer">
+		update customer
+		<set>
+			<if test="name != null">name=#{name},</if>
+			<if test="title != null">title=#{title},</if>
+			<if test="description != null">description=#{description},</if>
+			<if test="remark != null">remark=#{remark},</if>
+			<if test="path != null">path=#{path},</if>
+			<if test="url != null">url=#{url},</if>
+			<if test="power != null">power=#{power},</if>
+			<if test="isdel != null">isdel=#{isdel}</if>
+		</set>
+		where id=#{id}
+	</update>
+	<!-- 删除客户信息 -->
+	<delete id="deleteCustomer" parameterType="int">
+		delete from customer where id=#{id}
+	</delete>
+	<!-- 批量删除客户信息 -->
+	<delete id="deleteCustomerList">
+		delete from customer where id in
+		<foreach collection="list" item="item" index="index" open="(" separator="," close=")">
+			#{item}
+		</foreach>
+	</delete>
+	<!-- 统计客户数量 -->
+	<select id="getCustomers" resultType="int">
+	   select count(id) from customer where isdel = 1
+	</select>
+</mapper>

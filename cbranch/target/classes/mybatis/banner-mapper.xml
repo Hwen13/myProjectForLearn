@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zqkc.dao.IBannerDao">	
+		
+		<!-- 添加轮播 -->
+		<insert id="addBanner" parameterType="Banner" flushCache="true">
+			insert into banner(title,description,remark,power,isdel)
+			values(#{title},#{description},#{remark},#{power},#{isdel})
+		</insert>
+		<!-- 删除轮播 -->
+		<update id="deleteBanner" parameterType="Banner" >
+			update banner set isdel = 0 where id=#{id}
+		</update>
+		<!-- 批量删除轮播 -->
+		<update id="deleteMultiBanner" parameterType="list" >
+			update banner set isdel = 0  where id in 
+			<foreach item="id"  open="(" separator="," close=")" collection="list">#{id}</foreach>
+		</update>
+		<!-- 更新导航 -->
+		<update id="updateBanner" parameterType="Banner" > 
+			update banner 
+			<trim prefix="set" suffixOverrides=",">
+				<if test="title !=null">
+					title=#{title},
+				</if>
+				<if test="description !=null">
+					description=#{description},
+				</if>
+				<if test="remark !=null">
+					remark=#{remark},
+				</if>
+				<if test="power !=null">
+					power=#{power},
+				</if>
+				<if test="isdel !=null">
+					isdel=#{isdel},
+				</if>				
+			</trim>
+			where id=#{id}
+		</update>
+		<!-- 查询导航ID编号 -->
+		<select id="findBannerId" parameterType="Banner" resultType="int">
+			select id from banner where title=#{title} and description=#{description} 
+		</select>
+		<!-- 查询导航 -->
+		<select id="findBanner" parameterType="Banner" resultType="Banner">
+			select *from Banner where id=#{id} where isdel=1  order by power
+		</select>
+		<!-- 查询所有导航 -->
+		<select id="findBannerAll" resultType="Banner">
+			select *from Banner where isdel=1 order by power	 
+		</select>
+		<!-- 查询导航 -->
+		<select id="getBannerID" parameterType="Banner" resultType="int">
+			select id from Banner where filename=#{filename} and path like #{path}
+		</select>
+		<!-- 统计轮播 -->
+		<select id="getBanners" resultType="int">
+		   select count(id) from banner where isdel = 1
+		</select>
+
+
+</mapper>
