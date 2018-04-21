@@ -1,0 +1,80 @@
+package com.zqkc.controller;
+
+
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.zqkc.model.Services;
+import com.zqkc.service.IServicesService;
+
+@Controller
+@RequestMapping("/services")
+public class ServicesController {
+	
+	@Autowired
+	private IServicesService servicesService;
+	
+	public void setServicesService(IServicesService servicesService) {
+		this.servicesService = servicesService;
+	}
+	/**
+	 * 服务列表
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/list")
+	public ModelAndView list(Services services,HttpSession session,HttpServletRequest req)throws Exception{
+		
+		ModelAndView md = new ModelAndView();
+		md.setViewName("services_list");
+		return md;
+	}
+	/**
+	 * 添加服务
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/add")
+	public ModelAndView addServices(Services services)throws Exception{
+		
+		ModelAndView md = new ModelAndView();
+		if(servicesService.doAdd(services)){
+			md.setViewName("services_list");
+		}else{
+			md.setViewName("services_add");
+		}
+		return md;
+	}
+	/**
+	 * 更改服务
+	 * @param services
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/update")
+	public ModelAndView updateServices(Services services)throws Exception{
+		
+		ModelAndView md = new ModelAndView();
+		if(servicesService.doUpdate(services)){
+			md.setViewName("services_list");
+		}else{
+			md.setViewName("services_update");
+		}
+		return md;
+	}
+	
+	@RequestMapping("/save")
+	public String save()throws Exception{
+		return "services_add";
+	}
+	@RequestMapping("/change")
+	public String change()throws Exception{
+		return "services_update";
+	}
+}

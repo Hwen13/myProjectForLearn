@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zqkc.dao.IBannerfileDao">
+
+	<!-- 查询轮播图编号 -->
+	<select id="getBannerfilId" parameterType="Bannerfile" resultType="int">
+		<bind name="path" value="'%' + _path.getName() + '%'" />
+		select id from Bannerfile where filename=#{filename} and path like #{path} and isdel=1
+	</select>
+	<!-- 添加轮播图片 -->
+	<insert id="addBannerfile" parameterType="Bannerfile">
+		insert into bannerfile(filename,path,pid,isdel) values(#{filename},#{path},#{pid},#{isdel})
+	</insert>
+	<!-- 删除轮播图 by id -->
+	<update id="deleteBannerfile" parameterType="Bannerfile">
+		update bannerfile set isdel=0 where id=#{id} or filename=#{filename} or pid=#{pid}
+	</update>
+	<!-- 修改轮播图片 -->
+	<update id="updateBannerfile" parameterType="Bannerfile">
+		update bannerfile set filename=#{filename},path=#{path},pid=#{pid},isdel=#{isdel} where id=#{id}
+		<trim prefix="set" suffixOverrides=",">
+			<if test="filename!=null">
+				filename=#{name},
+			</if>
+			<if test="path!=null">
+				path=#{path}
+			</if>
+			<if test="pid!=null">
+				pid=#{pid}
+			</if>
+			<if test="isdel!=null">
+				isdel=#{isdel}
+			</if>
+			where id=#{id}
+		</trim>
+	</update>
+	<!-- 查询轮播图片 -->
+	<select id="findBannerfile" parameterType="Bannerfile" resultType="Bannerfile">
+		select * from bannerfile where pid=#{pid} and isdel=1
+		
+	</select>
+	<!-- 查询所有轮播 -->
+	<select id="findBannerfileAll" resultType="Bannerfile">
+		select * from bannerfile where isdel=1
+	</select>
+	
+</mapper>

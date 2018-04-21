@@ -1,0 +1,69 @@
+
+#OFF\u3001 FATAL\u3001ERROR\u3001WARN\u3001INFO\u3001DEBUG\u3001TRACE\u3001ALL
+#log4j.rootLogger=ERROR,stdout
+
+#mybatis logger config
+log4j.rootLogger=DEBUG,ERROR,stdout
+log4j.logger.com.ibatis=INFO
+log4j.logger.com.ibatis.common.jdbc.SimpleDataSource=INFO
+log4j.logger.org.apache.ibatis.jdbc.ScriptRunner=INFO
+log4j.logger.com.ibatis.sqlmap.engine.impl.SqlMapClientDelegate=info
+log4j.logger.java.sql.Connection=DEBUG
+log4j.logger.java.sql.Statement=DEBUG
+log4j.logger.java.sql.PreparedStatement=DEBUG
+
+
+log4j.logger.debugLogger=debug,debugAppender
+log4j.logger.infoLogger=info,infoAppender
+log4j.logger.warnLogger=warn,warnAppender
+log4j.logger.errorLogger=error,errorAppender
+log4j.logger.fatalLogger=fatal,fatalAppender
+
+#debug file
+log4j.appender.debugAppender=org.apache.log4j.RollingFileAppender
+log4j.appender.debugAppender.MaxFileSize=1MB
+log4j.appender.debugAppender.Threshold=DEBUG
+log4j.appender.debugAppender.MaxBackupIndex=1
+log4j.appender.debugAppender.File=D://logs/debug.log
+log4j.appender.debugAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.debugAppender.layout.ConversionPattern=%d{yyyy-MM-dd HH\:mm\:ss} [%c]-[%-5p]%m%n
+#info file
+log4j.appender.infoAppender=org.apache.log4j.RollingFileAppender
+log4j.appender.infoAppender.File=D://logs/info.log
+log4j.appender.infoAppender.Encoding=GBK
+log4j.appender.infoAppender.MaxFileSize=1MB
+log4j.appender.infoAppender.Append=true
+log4j.appender.infoAppender.Threshold=INFO
+log4j.appender.infoAppender.MaxBackupIndex=10
+log4j.appender.infoAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.infoAppender.layout.ConversionPattern=%d{yyyy-MM-dd HH\:mm\:ss} [%c]-[%-5p]%m%n
+#warn file
+log4j.appender.warnAppender=org.apache.log4j.RollingFileAppender
+log4j.appender.warnAppender.MaxFileSize=1MB
+log4j.appender.warnAppender.Threshold=WARN
+log4j.appender.warnAppender.MaxBackupIndex=1
+log4j.appender.warnAppender.File=D://logs/warn.log
+log4j.appender.warnAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.warnAppender.layout.ConversionPattern=%d{yyyy-MM-dd HH\:mm\:ss} [%c]-[%-5p]%m%n
+#error file
+log4j.appender.errorAppender=org.apache.log4j.RollingFileAppender
+log4j.appender.errorAppender.MaxFileSize=1MB
+log4j.appender.errorAppender.Threshold=ERROR
+log4j.appender.errorAppender.MaxBackupIndex=10
+log4j.appender.errorAppender.File=D://logs/error.log
+log4j.appender.errorAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.errorAppender.layout.ConversionPattern=%d{yyyy-MM-dd HH\:mm\:ss} [%c]-[%-5p]%m%n
+#fatal file
+log4j.appender.fatalAppender=org.apache.log4j.RollingFileAppender
+log4j.appender.fatalAppender.MaxFileSize=1MB
+log4j.appender.fatalAppender.Threshold=FATAL
+log4j.appender.fatalAppender.MaxBackupIndex=10
+log4j.appender.fatalAppender.File=D://logs/fatal.log
+log4j.appender.fatalAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.fatalAppender.layout.ConversionPattern=%d{yyyy-MM-dd HH\:mm\:ss} [%c]-[%-5p]%m%n
+
+### \u8f93\u51fa\u4fe1\u606f\u5230\u63a7\u5236\u62ac ###
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd} [%c]-[%-5p]%m%n
+

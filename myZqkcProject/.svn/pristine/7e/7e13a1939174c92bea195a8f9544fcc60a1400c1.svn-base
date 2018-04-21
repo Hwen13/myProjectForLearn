@@ -1,0 +1,58 @@
+package com.zqkc.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.zqkc.model.Project;
+
+/**
+ * 
+ * @author hw 项目案例service层接口
+ *
+ */
+@Component
+public interface IProjectService {
+
+	/**
+	 * 添加项目案例处理
+	 * @param project
+	 * @return
+	 * @throws Exception
+	 */
+	public boolean doAddProject(Project project) throws Exception;
+	
+	/**
+	 * 删除项目案例
+	 * @param id
+	 * @return
+	 * @throws Exception
+	 */
+	public boolean doDeleteProject(int id) throws Exception;
+	
+	/**
+	 * 更新项目案例
+	 * @param id
+	 * @return
+	 * @throws Exception
+	 */
+	public boolean doUpdateProject(int id)throws Exception;
+	
+	/**
+	 * 根据ID查找所有项目案例
+	 * @param id 
+	 * @return
+	 * @throws Exception
+	 */
+	public Project doFindProjectById(int id) throws Exception;
+	
+	/**
+	 * 查找所有的项目案例
+	 * @param s
+	 * @return
+	 * @throws Exception
+	 */
+	public List<Project> doFindProjectAll(String s) throws Exception;
+		
+	
+}

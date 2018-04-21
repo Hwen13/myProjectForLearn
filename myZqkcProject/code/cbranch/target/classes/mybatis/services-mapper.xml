@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zqkc.dao.IServicesDao">
+	<!-- 添加服务信息 -->
+	<insert id="addServices" parameterType="Services" flushCache="true">
+		insert into services (title,description,remark,url,power,isdel) values (#{title},#{description},#{remark},#{url},#{power},#{isdel})
+	</insert>
+	<!-- 查询所有服务信息 -->
+	<select id="findServices" resultType="Services">
+		select * from services order by power
+	</select>
+	<!-- 根据id查询服务信息 -->
+	<select id="findByServices" parameterType="int" resultType="Services">
+		select * from services where id=#{id}
+	</select>
+	<!-- 更新服务信息 -->
+	<update id="updateServices" parameterType="Services">
+		update services 
+		<set>
+			<if test="title != null">title=#{title},</if>
+			<if test="description != null">description=#{description},</if>
+			<if test="remark != null">remark=#{remark},</if>
+			<if test="url != null">url=#{url},</if>
+			<if test="power != null">power=#{power},</if>
+			<if test="isdel != null">isdel=#{isdel}</if>
+		</set>
+		where id=#{id}
+	</update>
+	<!-- 删除服务信息 -->
+	<delete id="deleteServices" parameterType="int">
+		delete from services where id=#{id}
+	</delete>
+	<!-- 批量删除服务信息 -->
+	<delete id="daleteServicesList">
+		delete from services where id in
+		<foreach collection="list" item="item" index="index" open="(" separator="," close=")">
+			#{item}
+		</foreach>
+	</delete>
+</mapper>

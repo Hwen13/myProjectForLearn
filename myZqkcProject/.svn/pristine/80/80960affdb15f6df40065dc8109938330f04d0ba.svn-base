@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zqkc.dao.IBannerfileDao">
+
+	<!-- 查询轮播图编号 -->
+	<select id="findBannerfilId" parameterType="Bannerfile" resultType="int">
+		select id from bannerfile where filename=#{filename} and path=#{pid}
+	</select>
+	<!-- 添加轮播图片 -->
+	<insert id="addBannerfile" parameterType="Bannerfile">
+		insert into bannerfile(filename,path,pid,isdel) values(#{filename},#{path},#{pid},#{isdel})
+	</insert>
+	<!-- 删除轮播图 -->
+	<delete id="deleteBannerfile" parameterType="Bannerfile">
+		delete bannerfile where id=#{id}
+	</delete>
+	<!-- 修改轮播图片 -->
+	<update id="updateBannerfile" parameterType="Bannerfile">
+		update bannerfile set filename=#{filename},path=#{path},pid=#{pid},isdel=#{isdel} where id=#{id}
+		<trim prefix="set" suffixOverrides=",">
+			<if test="filename!=null">
+				filename=#{name},
+			</if>
+			<if test="path!=null">
+				path=#{path}
+			</if>
+			<if test="pid!=null">
+				pid=#{pid}
+			</if>
+			<if test="isdel!=null">
+				isdel=#{isdel}
+			</if>
+			where id=#{id}
+		</trim>
+	</update>
+	<!-- 查询轮播图片 -->
+	<select id="findBannerfile" parameterType="Bannerfile" resultType="Bannerfile">
+		select * from bannerfile where filename=#{filename} and path=#{path}
+		
+	</select>
+	<!-- 查询所有轮播 -->
+	<select id="findBannerfileAll" resultType="Bannerfile">
+		select * from bannerfile 
+	</select>
+	
+</mapper>

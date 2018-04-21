@@ -1,0 +1,784 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link type="text/css" media="all" href="css/autoptimize_bbf5e1e18e3258d6e3214c3ed2a17c8f.css" rel="stylesheet" />
+  <title>中企科创--首页</title>
+<script type="text/javascript" src="js/autoptimize_a36b91225470a523306917378834a6a5.js"></script> 
+  <!--[if lte IE 8]> <script type="text/javascript" src="kc/kc-content/themes/avada/js/html5shiv.js"></script> <![endif]-->
+  <meta name="viewport" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+   <link rel="stylesheet" id="rs-plugin-settings-group-css" href="css/min.css" type="text/css" media="all" /> 
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="res/wlwmanifest.xml" />
+ 	
+  <script type="text/javascript">/*@cc_on@if (@_jscript_version == 10)
+			document.write('');	@end@*/
+
+	var doc = document.documentElement; 
+	doc.setAttribute('data-useragent', navigator.userAgent);</script> 
+ </head>
+ <body class="page page-id-24 page-template page-template-100-width page-template-100-width-php no-tablet-sticky-header 
+ 	no-mobile-sticky-header no-mobile-slidingbar no-mobile-totop layout-wide-mode mobile-menu-design-classic" data-spy="scroll">
+  <div id="wrapper" class="">
+   <div id="slidingbar-area">  
+    <div id="slidingbar">
+     <div class="avada-row">
+      <div class="fusion-columns row fusion-columns-1 columns columns-1">
+       <div class="fusion-column col col-lg-12 col-md-12 col-sm-12 ">
+        <div id="recent-posts-3" class="slidingbar-widget-col widget_recent_entries">
+         <h3>近期文章</h3>
+         <ul>
+          <li> <a href="">tomcat-dbcp不使用连接池配置</a></li>
+          <li> <a href="">Keycode对照表</a></li>
+          <li> <a href="">5.2版本，通过jQuery去掉borderLayout的top</a></li>
+          <li> <a href="">孵化平台技术服务详解</a></li>
+          <li> <a href="">开启就业新模式</a></li>
+         </ul>
+         <div style="clear:both;"></div>
+        </div>
+       </div>
+       <div class="fusion-clearfix"></div>
+      </div>
+     </div>
+    </div>
+    <div class="sb-toggle-wrapper">
+     <a class="sb-toggle" href="#"></a>
+    </div>
+   </div>
+   <div class="header-wrapper">
+    <div class="header-v1"> 
+     <header id="header">
+      <div class="avada-row" style="padding-top:0px;padding-bottom:0px;" data-padding-top="0px" data-padding-bottom="0px">
+       <div class="logo" data-margin-right="0px" data-margin-left="0px" data-margin-top="31px" data-margin-bottom="31px" style="margin-right:0px;margin-top:31px;margin-left:0px;margin-bottom:31px;"> 
+        <a href="cn"> <img src="images/logo.png" alt="" class="normal_logo" /> </a>
+       </div> 
+       <nav id="nav" class="nav-holder" data-height="83px">
+        <ul class="navigation menu fusion-navbar-nav" style="overflow:hidden">
+         <li id="menu-item-2522" class="menu-item menu-item-type-post_type menu-item-object-page  page_item page-item-24 current_page_item menu-item-2522">
+         	<a href="#" alt="首页">首页</a></li>
+         <li id="menu-item-2525" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2525"><a href="project.html">项目案例</a></li>
+          <li id="menu-item-2523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2523"><a href="customer.html">业务客户</a></li>
+          <li id="menu-item-2521" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2521"><a href="recruit.html">招贤纳士</a></li>
+         <li id="menu-item-2524" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2524"><a href="about.html">关于我们</a></li>         
+         <li id="menu-item-8375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8375"><a href="http://star.szns.gov.cn/">创业大赛</a></li>
+         <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="http://star.szns.gov.cn/">创业平台</a></li>
+        <!--
+         <li class="main-nav-search"> <a id="main-nav-search-link" class="search-link"></a>
+          <div id="main-nav-search-form" class="main-nav-search-form">
+           <form role="search" class="searchform" method="get" action="http://cbranch/kc/">
+            <div class="search-table">
+             <div class="search-field"> 
+              <input type="text" value="" name="s" class="s" />
+             </div>
+             <div class="search-button"> 
+              <input type="submit" class="searchsubmit" value="?" />
+            </div>
+           </form>
+          </div></li>-->
+        </ul> 
+       </nav>
+       <div class="mobile-nav-holder main-menu"></div>
+      </div> 
+     </header>
+    </div>
+    <div class="init-sticky-header"></div>
+   </div> 
+   <header id="header-sticky" class="sticky-header">
+    <div class="sticky-shadow">
+     <div class="avada-row">
+      <div class="logo"> 
+       <a href="cn"> <img src="images/logo.png" alt="" data-max-width="" class="normal_logo" /> </a>
+      </div> 
+      <nav id="sticky-nav" class="nav-holder">
+       <ul class="navigation menu fusion-navbar-nav">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-24 current_page_item menu-item-2522"><a href="#">首页</a></li>             
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2525"><a href="project.html">项目案例</a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2523"><a href="customer.html">业务客户</a></li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2521"><a href="recruit.html">招贤纳士</a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2524"><a href="about.html">关于我们</a></li>
+       
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8375"><a href="http://star.szns.gov.cn/">创业大赛</a></li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="http://star.szns.gov.cn/">创业平台</a></li>       
+        <!--
+        <li class="main-nav-search"> <a id="sticky-nav-search-link" class="search-link"></a>
+         <div id="sticky-nav-search-form" class="main-nav-search-form">
+          <form role="search" class="searchform" method="get" action="">
+           <div class="search-table">
+            <div class="search-field"> 
+             <input type="text" value="" name="s" class="s" />
+            </div>
+            <div class="search-button"> 
+             <input type="submit" class="searchsubmit" value="?" />
+            </div>
+           </div>
+          </form>
+         </div></li>-->
+       </ul> 
+      </nav>
+      <div class="mobile-nav-holder"></div>
+     </div>
+    </div> 
+   </header>
+
+  <div id="sliders-container"> 
+    <script type="text/javascript" src="js/jquery.themepunch.tools.min.js?rev=4.6.5"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js?rev=4.6.5"></script> 
+  <div id="rev_slider_3_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#1f8315;padding:0px;margin-top:0px;margin-bottom:0px;max-height:600px;">
+   <div id="rev_slider_3_1" class="rev_slider fullwidthabanner" style="display:none;max-height:600px;height:600px;">
+      <ul>
+       <li data-transition="fade" data-slotamount="3" data-masterspeed="1300" data-thumb="images/bg-05-320x200.jpg" data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="3" data-saveperformance="off" data-title="幻灯片"> <img src="images/dummy.png" alt="" data-lazyload="images/bg-05.jpg" data-bgposition="center center" data-kenburns="on" data-duration="11000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="center center" />
+        <div class="tp-caption yhverylargewhite sfl customout tp-resizeme" data-x="50" data-y="150" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="700" data-start="1000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
+         平台搭建、技术服务
+        </div>
+        <div class="tp-caption yhlargepinkbg-2 sfl customout tp-resizeme" data-x="463" data-y="149" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="700" data-start="1400" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
+         中企科创
+        </div>
+        <div class="tp-caption yhmediumlightwhite sfl customout tp-resizeme" data-x="50" data-y="241" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="700" data-start="2000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 7; max-width: 631px; max-height: 36px; white-space: nowrap;">
+         我们不一定完美，但一定让你满意
+        </div>
+        <div class="tp-caption yhmediumlightwhite sfl customout tp-resizeme" data-x="49" data-y="292" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="800" data-start="2400" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">
+         创业就是这么简单……
+        </div>
+        <div class="tp-caption lfb customout" data-x="666" data-y="330" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="850" data-start="3400" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 9;">
+         <img src="images/dummy.png" alt="" data-ww="468.5785714285714" data-hh="229" data-lazyload="images/x5-2.png" />
+        </div>
+        <div class="tp-caption lft customout" data-x="930" data-y="150" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="850" data-start="4000" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 10;">
+         <img src="images/dummy.png" alt="" data-ww="468.578" data-hh="229" data-lazyload="images/tn.png" />
+        </div>
+     </li>
+       <li data-transition="fade" data-slotamount="3" data-masterspeed="1300" data-thumb="images/bg-05-320x200.jpg" data-saveperformance="off" data-title="幻灯片"> <img src="images/dummy.png" alt="" data-lazyload="images/bg-05.jpg" data-bgposition="center center" data-kenburns="on" data-duration="11000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="center center" />
+        <div class="tp-caption yhverylargewhite sfl customout tp-resizeme" data-x="50" data-y="150" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="700" data-start="1000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
+         高兼容、高容错、跨终端
+        </div>
+        <div class="tp-caption yhlargepinkbg-2 sfl customout tp-resizeme" data-x="553" data-y="149" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="700" data-start="1400" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
+         中企科创        </div>
+        <div class="tp-caption yhmediumlightwhite sfl customout tp-resizeme" data-x="50" data-y="241" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="700" data-start="2000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 7; max-width: 631px; max-height: 36px; white-space: nowrap;">
+         安卓App、微信服务号/企业号、WebApp
+        </div>
+        <div class="tp-caption yhmediumlightwhite sfl customout tp-resizeme" data-x="49" data-y="292" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="800" data-start="2400" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">
+         中企科创，是您不错的选择……
+        </div>
+        <div class="tp-caption lfb customout" data-x="666" data-y="330" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="850" data-start="3400" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 9;">
+         <img src="images/dummy.png" alt="" data-ww="500" data-hh="260" data-lazyload="images/x5-2.png" />
+        </div>
+        <div class="tp-caption lft customout" data-x="930" data-y="150" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="850" data-start="4000" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600" style="z-index: 10;">
+         <img src="images/dummy.png" alt="" data-ww="500" data-hh="260" data-lazyload="images/tn.png" />
+        </div>
+    </li>
+      </ul>
+      <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+     </div> 
+  <script type="text/javascript">/******************************************
+					-	PREPARE PLACEHOLDER FOR SLIDER	-
+				******************************************/
+				
+
+				var setREVStartSize = function() {
+					var	tpopt = new Object();
+						tpopt.startwidth = 1360;
+						tpopt.startheight = 600;
+						tpopt.container = jQuery('#rev_slider_3_1');
+						tpopt.fullScreen = "off";
+						tpopt.forceFullWidth="off";
+
+					tpopt.container.closest(".rev_slider_wrapper").css({height:tpopt.container.height()});tpopt.width=parseInt(tpopt.container.width(),0);tpopt.height=parseInt(tpopt.container.height(),0);tpopt.bw=tpopt.width/tpopt.startwidth;tpopt.bh=tpopt.height/tpopt.startheight;if(tpopt.bh>tpopt.bw)tpopt.bh=tpopt.bw;if(tpopt.bh<tpopt.bw)tpopt.bw=tpopt.bh;if(tpopt.bw<tpopt.bh)tpopt.bh=tpopt.bw;if(tpopt.bh>1){tpopt.bw=1;tpopt.bh=1}if(tpopt.bw>1){tpopt.bw=1;tpopt.bh=1}tpopt.height=Math.round(tpopt.startheight*(tpopt.width/tpopt.startwidth));if(tpopt.height>tpopt.startheight&&tpopt.autoHeight!="on")tpopt.height=tpopt.startheight;if(tpopt.fullScreen=="on"){tpopt.height=tpopt.bw*tpopt.startheight;var cow=tpopt.container.parent().width();var coh=jQuery(window).height();if(tpopt.fullScreenOffsetContainer!=undefined){try{var offcontainers=tpopt.fullScreenOffsetContainer.split(",");jQuery.each(offcontainers,function(e,t){coh=coh-jQuery(t).outerHeight(true);if(coh<tpopt.minFullScreenHeight)coh=tpopt.minFullScreenHeight})}catch(e){}}tpopt.container.parent().height(coh);tpopt.container.height(coh);tpopt.container.closest(".rev_slider_wrapper").height(coh);tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(coh);tpopt.container.css({height:"100%"});tpopt.height=coh;}else{tpopt.container.height(tpopt.height);tpopt.container.closest(".rev_slider_wrapper").height(tpopt.height);tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(tpopt.height);}
+				};
+
+				/* CALL PLACEHOLDER */
+				setREVStartSize();
+
+
+				var tpj=jQuery;
+				tpj.noConflict();
+				var revapi3;
+
+				tpj(document).ready(function() {
+
+				if(tpj('#rev_slider_3_1').revolution == undefined){
+					revslider_showDoubleJqueryError('#rev_slider_3_1');
+				}else{
+				   revapi3 = tpj('#rev_slider_3_1').show().revolution(
+					{	
+												dottedOverlay:"none",
+						delay:10000,
+						startwidth:1360,
+						startheight:600,
+						hideThumbs:200,
+
+						thumbWidth:200,
+						thumbHeight:200,
+						thumbAmount:1,
+						
+												
+						simplifyAll:"on",
+
+						navigationType:"none",
+						navigationArrows:"solo",
+						navigationStyle:"custom",
+
+						touchenabled:"on",
+						onHoverStop:"off",
+						nextSlideOnWindowFocus:"off",
+
+						swipe_threshold: 0.7,
+						swipe_min_touches: 1,
+						drag_block_vertical: false,
+						
+												
+													panZoomDisableOnMobile:"on",
+													
+						keyboardNavigation:"on",
+
+						navigationHAlign:"center",
+						navigationVAlign:"bottom",
+						navigationHOffset:0,
+						navigationVOffset:20,
+
+						soloArrowLeftHalign:"left",
+						soloArrowLeftValign:"center",
+						soloArrowLeftHOffset:20,
+						soloArrowLeftVOffset:0,
+
+						soloArrowRightHalign:"right",
+						soloArrowRightValign:"center",
+						soloArrowRightHOffset:20,
+						soloArrowRightVOffset:0,
+
+						shadow:0,
+						fullWidth:"on",
+						fullScreen:"off",
+
+												spinner:"spinner2",
+												
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+
+						shuffle:"off",
+
+						autoHeight:"off",
+						forceFullWidth:"off",
+						
+						
+						hideTimerBar:"on",
+						hideThumbsOnMobile:"on",
+						hideBulletsOnMobile:"off",
+						hideArrowsOnMobile:"off",
+						hideThumbsUnderResolution:0,
+
+												hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						startWithSlide:0					});
+
+
+
+									}
+				});	/*ready*/</script> 
+    </div>
+   </div>
+   <div id="main" class="clearfix width-100" style="padding-left:30px;padding-right:30px">
+    <div class="avada-row" style="max-width:100%;">
+     <div id="content" class="full-width">
+      <div id="post-24" class="post-24 page type-page status-publish hentry">
+       <div class="post-content">
+        <div class="fusion-fullwidth fullwidth-box" style="background-attachment:scroll;background-position:left top;background-repeat:repeat-y;border-color:#eae9e9;border-bottom-width: 0px;border-top-width: 0px;border-bottom-style: solid;border-top-style: solid;padding-bottom:60px;padding-left:0px;padding-right:0px;padding-top:10px;">
+          <div class="avada-row">
+           <h1 style="text-align: center;">
+            <span style="padding: 0px 5px 0px 5px; border-radius: 2px 2px 2px 2px;">中企科创业务平台</span></h1>
+          <h4 style="text-align: center;">以“互联网+”平台技术为核心</h4>
+          <div class="fusion-sep-clear"></div>
+          <div class="fusion-separator fusion-full-width-sep sep-single sep-dotted" style="border-color:#e0dede;margin-top:25px;margin-bottom:50px;">
+           <span class="icon-wrapper" style="border-color:#e0dede;"><i class="fa fa-angle-up" style="color:#e0dede;"></i></span>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column last spacing-no" style="width:33.3333%">
+           <div class="fusion-column-wrapper">
+            <div class="imageframe-align-center">
+             <span class="fusion-imageframe imageframe imageframe-none imageframe-1 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1"> 
+             	<img title="" alt="" src="images/02-11-1.png" class="img-responsive" /></span>
+            </div>
+            <h2 style="text-align: center;">项目经验</h2>
+            <p style="text-align: center;">从事IT行业多年，<br /> 以技术支撑“创业之星”大赛数届！</p>
+            
+           </div>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column last spacing-no" style="width:33.3333%">
+           <div class="fusion-column-wrapper" style="padding:10;">
+             <div class="imageframe-align-center">
+             <span class="fusion-imageframe imageframe imageframe-none imageframe-2 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1">
+             	<img title="" alt="" src="images/02-11-2.png" class="img-responsive" /></span>
+            </div>
+            <h2 style="text-align: center;">全新项目管理模式</h2>
+            <p style="text-align: center;">自动化系统检测，及时规避风险;<br /> 定时性代码缺陷检测，及时优化系统缺陷，提高系统性能！</p>
+           
+           </div>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column last spacing-no" style="width:33.3333%">
+           <div class="fusion-column-wrapper" style="padding:10;">
+            <div class="imageframe-align-center">
+             <span class="fusion-imageframe imageframe imageframe-none imageframe-3 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1">
+             	<img title="" alt="" src="images/02-11-3.png" class="img-responsive" /></span>
+            </div>
+            <h2 style="text-align: center;">孵化平台</h2>
+            <p style="text-align: center;">技术服务、平台服务、政企合作<br/><span style="color: #008000;"><a style="color: #008000;" title="生机勃勃的X5生态圈" href="http://star.szns.gov.cn" target="_blank">企业孵化平台</a></span><br /> 创业无压力</p>
+            
+           </div>
+          </div>
+          <div class="fusion-clearfix"></div>
+         </div>
+        </div>
+ 
+      <!--     <div class="fusion-fullwidth fullwidth-box" style="background-attachment:scroll;background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;border-color:#eae9e9;border-bottom-width: 0px;border-top-width: 0px;border-bottom-style: solid;border-top-style: solid;padding-bottom:40px;padding-left:0px;padding-right:0px;padding-top:40px;">
+         <div class="avada-row">          
+          <div class="fusion-sep-clear"></div>
+          <div class="fusion-separator fusion-full-width-sep sep-single sep-dotted" style="border-color:#e0dede;margin-top:25px;margin-bottom:50px;">
+           <span class="icon-wrapper" style="border-color:#e0dede;"><i class="fa fa-angle-up" style="color:#e0dede;"></i></span>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column spacing-yes">
+           <div class="fusion-column-wrapper">
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:30px;"></div>
+            <h2 style="text-align: center;">全能力模拟调试和真机调试</h2>
+            <p style="text-align: center;">支持完备的模拟调试和真机调试，模拟调试效果和真机运行完全相同。</p>
+           </div>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column spacing-yes">
+           <div class="fusion-column-wrapper">
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:30px;"></div>
+            <h2 style="text-align: center;">调试跟踪每行代码，无黑盒死角</h2>
+            <p style="text-align: center;">开放所有源码，能调试进入每行代码，找到和排查任何代码原因，系统调试彻底透明，无黑盒，无死角！</p>
+           </div>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column last spacing-yes">
+           <div class="fusion-column-wrapper">
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:30px;"></div>
+            <h2 style="text-align: center;">全方位代码智能提示</h2>
+            <p style="text-align: center;">所有UI组件，和本机插件API，在IDE里，都能实现代码智能提示，给开发者提供极大方便</p>
+           </div>
+          </div>
+        <div class="fusion-clearfix"></div>
+         <div class="fusion-one-third one_third fusion-layout-column fusion-column last spacing-no" style="width:33.3333%">
+           <div class="fusion-column-wrapper" style="padding:12px;">
+            <div class="imageframe-align-center">
+             <span class="fusion-imageframe imageframe imageframe-dropshadow imageframe-23 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1"> <img title="" alt="" src="kc/kc-content/uploads/2015/02/x5-28.png" class="img-responsive" /></span>
+            </div>
+           </div>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column last spacing-no" style="width:33.3333%">
+           <div class="fusion-column-wrapper" style="padding:12px;">
+            <div class="imageframe-align-center">
+             <span class="fusion-imageframe imageframe imageframe-dropshadow imageframe-24 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1"> <img title="" alt="" src="kc/kc-content/uploads/2015/02/x5-26.png" class="img-responsive" /></span>
+            </div>
+           </div>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column last spacing-no" style="width:33.3333%">
+           <div class="fusion-column-wrapper" style="padding:12px;">
+            <div class="imageframe-align-center">
+             <span class="fusion-imageframe imageframe imageframe-dropshadow imageframe-25 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1"> <img title="" alt="" src="kc/kc-content/uploads/2015/02/x5-27.png" class="img-responsive" /></span>
+            </div>
+           </div>
+          </div>
+          <div class="fusion-clearfix"></div>
+         </div>
+        </div>
+-->
+        <!-- <div class="fusion-fullwidth fullwidth-box" style="background-color:#f9f9f9;background-attachment:scroll;background-position:left top;background-repeat:repeat;border-color:#e8e8e8;border-bottom-width: 1px;border-top-width: 1px;border-bottom-style: solid;border-top-style: solid;padding-bottom:20px;padding-left:0px;padding-right:0px;padding-top:40px;">
+         <div class="avada-row">
+          <h1 style="text-align: center;">开放架构、海量资源、任意扩展&nbsp;<span style="color: #999999;">?</span>&nbsp;<span style="color: #99cc00;">海纳百川，有容乃大</span></h1>
+          <h4 style="text-align: center;">主题、风格样式、UI组件、本机api组件、后端服务组件、向导、模板均可任意扩展</h4>
+          <div class="fusion-sep-clear"></div>
+          <div class="fusion-separator fusion-full-width-sep sep-single sep-dotted" style="border-color:#e0dede;margin-top:25px;margin-bottom:50px;">
+           <span class="icon-wrapper" style="border-color:#e0dede;"><i class="fa fa-angle-up" style="color:#e0dede;"></i></span>
+          </div>
+          <div class="fusion-one-sixth fusion-layout-column fusion-column last spacing-no" style="width:16.6666%">
+           <div class="fusion-column-wrapper" style="padding:10px;">
+            <span style="margin-left:25px;float:right;" class="fusion-imageframe imageframe imageframe-none imageframe-31 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1"> <img title="" alt="" src="kc/kc-content/uploads/2015/02/02-11-08-0.png" class="img-responsive" /></span>
+           </div>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column last spacing-no" style="width:33.3333%">
+           <div class="fusion-column-wrapper" style="padding:0px;">
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+            <h2 style="text-align: left;">主题、样式：海量bootstrap资源引入和定制</h2>
+            <p style="text-align: left;">Web世界主流的样式组件和模板库，BootStrap海量资源任意引入和定制扩展</p>
+           </div>
+          </div>
+          <div class="fusion-one-sixth fusion-layout-column fusion-column last spacing-no" style="width:16.6666%">
+           <div class="fusion-column-wrapper" style="padding:10px;">
+            <span style="margin-left:25px;float:right;" class="fusion-imageframe imageframe imageframe-none imageframe-32 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1"> <img title="" alt="" src="kc/kc-content/uploads/2015/02/02-27-1d.png" class="img-responsive" /></span>
+           </div>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column last spacing-no" style="width:33.3333%">
+           <div class="fusion-column-wrapper" style="padding:0px;">
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+            <h2 style="text-align: left;">UI组件：轻松扩展和引入各类UI组件</h2>
+            <p style="text-align: left;">基于纯H5框架，轻松引入第三方UI组件，并实现定制和可视化</p>
+           </div>
+          </div>
+          <div class="fusion-clearfix"></div>
+          <div class="fusion-one-sixth fusion-layout-column fusion-column last spacing-no" style="width:16.6666%">
+           <div class="fusion-column-wrapper" style="padding:10px;">
+            <span style="margin-left:25px;float:right;" class="fusion-imageframe imageframe imageframe-none imageframe-33 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1"> <img title="" alt="" src="kc/kc-content/uploads/2015/02/02-11-010-0.png" class="img-responsive" /></span>
+           </div>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column last spacing-no" style="width:33.3333%">
+           <div class="fusion-column-wrapper" style="padding:0px;">
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+            <h2 style="text-align: left;">本机codova组件：可随意引入和定制扩展</h2>
+            <p style="text-align: left;">端设备的所有本机api，均可通过codova组件方式实现引入和扩展，并在html5框架里任意使用</p>
+           </div>
+          </div>
+          <div class="fusion-one-sixth fusion-layout-column fusion-column last spacing-no" style="width:16.6666%">
+           <div class="fusion-column-wrapper" style="padding:10px;">
+            <span style="margin-left:25px;float:right;" class="fusion-imageframe imageframe imageframe-none imageframe-34 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1"> <img title="" alt="" src="kc/kc-content/uploads/2015/02/e-9.png" class="img-responsive" /></span>
+           </div>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column last spacing-no" style="width:33.3333%">
+           <div class="fusion-column-wrapper" style="padding:0px;">
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+            <h2 style="text-align: left;">后端服务组件：轻松引入并实现可视化扩展</h2>
+            <p style="text-align: left;">所有服务端组建和api，均可通过XBL标准描述，轻松引入使用，并可实现可视化设计</p>
+           </div>
+          </div>
+          <div class="fusion-clearfix"></div>
+          <div class="fusion-one-sixth fusion-layout-column fusion-column last spacing-no" style="width:16.6666%">
+           <div class="fusion-column-wrapper" style="padding:10px;">
+            <span style="margin-left:25px;float:right;" class="fusion-imageframe imageframe imageframe-none imageframe-35 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1"> <img title="" alt="" src="kc/kc-content/uploads/2015/02/e-8-0.png" class="img-responsive" /></span>
+           </div>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column last spacing-no" style="width:33.3333%">
+           <div class="fusion-column-wrapper" style="padding:0px;">
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+            <h2 style="text-align: left;">各类第三方插件轻松对接</h2>
+            <p style="text-align: left;">以web、本机、服务调用等方式，轻松对接即时通讯、消息推送、支付等各类插件</p>
+           </div>
+          </div>
+          <div class="fusion-one-sixth fusion-layout-column fusion-column last spacing-no" style="width:16.6666%">
+           <div class="fusion-column-wrapper" style="padding:10px;">
+            <span style="margin-left:25px;float:right;" class="fusion-imageframe imageframe imageframe-none imageframe-36 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1"> <img title="" alt="" src="kc/kc-content/uploads/2015/02/ui.png" class="img-responsive" /></span>
+           </div>
+          </div>
+          <div class="fusion-one-third one_third fusion-layout-column fusion-column last spacing-no" style="width:33.3333%">
+           <div class="fusion-column-wrapper" style="padding:0px;">
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+            <h2 style="text-align: left;">向导、模板：轻松自定义和扩展</h2>
+            <p style="text-align: left;">提供了丰富的向导和模板，开发者只需简单定义，即可轻松制作自己的向导和模板</p>
+           </div>
+          </div>
+          <div class="fusion-clearfix"></div>
+         </div>
+        </div> -->
+
+
+        <div class="fusion-fullwidth fullwidth-box" style="background-color:#f9f9f9;background-attachment:fixed;background-image: url(images/bgMetal5-1.jpg);background-position:left top;background-repeat:repeat;border-color:#e8e8e8;border-bottom-width: 1px;border-top-width: 1px;border-bottom-style: solid;border-top-style: solid;padding-bottom:20px;padding-left:20px;padding-right:20px;padding-top:40px;">
+         <div class="avada-row">
+          <h1 style="text-align: center;"><span style="color: #000000;">强大的创业服务技术平台&nbsp;</span>?&nbsp;<span style="color: #99cc00;">好平台必然人气爆棚</span></h1>
+          <h4 style="text-align: center;">依托开源免费的快速开发框架，以及能力强大的企业快速开发平台，我们凝聚了广泛的开发者，形成了大规模的开发者群体和活跃的生态圈。</h4>
+          <div class="fusion-sep-clear"></div>
+          <div class="fusion-separator fusion-full-width-sep sep-single sep-dotted" style="border-color:#e0dede;margin-top:25px;margin-bottom:50px;">
+           <span class="icon-wrapper" style="border-color:#e0dede;"><i class="fa fa-angle-up" style="color:#e0dede;"></i></span>
+          </div>
+          <div class="fusion-one-half one_half fusion-layout-column fusion-column spacing-yes">
+
+
+           <div class="fusion-column-wrapper" style="padding:16px;">
+
+            <div class="fusion-reading-box-container reading-box-container-1 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1">
+             <div class="reading-box element-bottomshadow" style="background-color:#fbffe0;border-width:1px;border-color:#e8e8e8;border-left-width:3px;border-left-color:#a0ce4e;border-style:solid;">
+              <a class="button fusion-button button-default default button-round button-large large button-flat continue continue-right" style="-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;" href="/cn/customer/" target="_blank"><span>看看典型开发商</span></a>
+              <h2>大规模开发者人群</h2>
+              <a class="button fusion-button button-default default button-round button-large large button-flat mobile-button continue-right" style="-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;" href="/cn/customer/" target="_blank"><span>看看典型开发商</span></a>
+              <div class="fusion-sep-clear"></div>
+              <div class="fusion-separator fusion-full-width-sep sep-single sep-dotted" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+              <div class="alignleft">
+               <i class="fa fontawesome-icon fa-users size-medium medium circle-yes" style="border-color:#ffffff;background-color:#81d742;"></i>
+              </div>桃李不言下自成蹊，程序员只相信好产品！以极致的产品、开放的架构、彻底的开源，凝聚了大规模的开发者群体
+             </div>
+
+            </div>
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+            <div class="fusion-reading-box-container reading-box-container-2 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1">
+             <div class="reading-box element-bottomshadow" style="background-color:#fbffe0;border-width:1px;border-color:#e8e8e8;border-left-width:3px;border-left-color:#a0ce4e;border-style:solid;">
+              <a class="button fusion-button button-default default button-round button-large large button-flat continue continue-right" style="-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;" href="/cn/customer/" target="_blank"><span>看看典型客户</span></a>
+              <h2>遍及各行业用户</h2>
+              <a class="button fusion-button button-default default button-round button-large large button-flat mobile-button continue-right" style="-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;" href="/cn/customer/" target="_blank"><span>看看典型客户</span></a>
+              <div class="fusion-sep-clear"></div>
+              <div class="fusion-separator fusion-full-width-sep sep-single sep-dotted" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+              <div class="alignleft">
+               <i class="fa fontawesome-icon fa-cogs size-medium medium circle-yes" style="border-color:#ffffff;background-color:#81d742;"></i>
+              </div>用户遍及政府、军队、军工、金融、电信、航天、航空、船舶、交通、建设、电力、石油石化、建筑、制造、教育等
+             </div>
+            </div>            
+
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+          
+
+           </div>
+
+
+
+          </div>
+
+          <div class="fusion-one-half one_half fusion-layout-column fusion-column last spacing-yes">
+           <div class="fusion-column-wrapper" style="padding:16px;">
+
+            <div class="fusion-reading-box-container reading-box-container-5 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1">
+             <div class="reading-box element-bottomshadow" style="background-color:#fbffe0;border-width:1px;border-color:#e8e8e8;border-left-width:3px;border-left-color:#a0ce4e;border-style:solid;">
+              <a class="button fusion-button button-default default button-round button-large large button-flat continue continue-right" style="-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;" href="" target="_blank"><span>参加每周培训</span></a>
+              <h2>每周线上和线下免费培训</h2>
+              <a class="button fusion-button button-default default button-round button-large large button-flat mobile-button continue-right" style="-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;" href="" target="_blank"><span>参加每周培训</span></a>
+              <div class="fusion-sep-clear"></div>
+              <div class="fusion-separator fusion-full-width-sep sep-single sep-dotted" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+              <div class="alignleft">
+               <i class="fa fontawesome-icon fa-user-md size-medium medium circle-yes" style="border-color:#ffffff;background-color:#81d742;"></i>
+              </div>面向所有开发者，快速入门，立足实战，一站到底，dev to dev。每周三、四官方培训，实地、远程任选！
+             </div>
+            </div>
+
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+            <div class="fusion-reading-box-container reading-box-container-6 fusion-animated" data-animationtype="fadeInDown" data-animationduration="1">
+             <div class="reading-box element-bottomshadow" style="background-color:#fbffe0;border-width:1px;border-color:#e8e8e8;border-left-width:3px;border-left-color:#a0ce4e;border-style:solid;">
+              <a class="button fusion-button button-default default button-round button-large large button-flat continue continue-right" style="-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;" href="" target="_blank"><span>逛逛技术论坛</span></a>
+              <h2>人气爆满的技术论坛</h2>
+              <a class="button fusion-button button-default default button-round button-large large button-flat mobile-button continue-right" style="-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;" href="" target="_blank"><span>逛逛技术论坛</span></a>
+              <div class="fusion-sep-clear"></div>
+              <div class="fusion-separator fusion-full-width-sep sep-single sep-dotted" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+              <div class="alignleft">
+               <i class="fa fontawesome-icon fa-files-o size-medium medium circle-yes" style="border-color:#ffffff;background-color:#81d742;"></i>
+              </div>数千人同时在线，人气爆满，交流切磋的好舞台。小白也好，高手也好，都欢迎入内，答疑解惑，交流分享
+             </div>
+            </div>          
+
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+           
+
+           </div>
+          </div>
+          <div class="fusion-clearfix"></div>
+         </div>
+        </div>
+        <div class="fusion-fullwidth fullwidth-box" style="background-attachment:scroll;background-image: url(images/pagetitle-bg-1.jpg);background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;border-color:#eae9e9;border-bottom-width: 0px;border-top-width: 0px;border-bottom-style: solid;border-top-style: solid;padding-bottom:20px;padding-left:0px;padding-right:0px;padding-top:40px;">
+         <div class="avada-row">
+          <div class="fusion-three-fourth three_fourth fusion-layout-column fusion-column spacing-yes">
+           <div class="fusion-column-wrapper">
+            <h1 style="text-align: right;"><span style="color: #ffffff;">立即下载，从此成为app开发高手</span></h1>
+           </div>
+          </div>
+          <div class="fusion-one-fourth one_fourth fusion-layout-column fusion-column last spacing-yes">
+           <div class="fusion-column-wrapper">
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:px;margin-bottom:15px;"></div>
+            <a class="button xlarge button default fusion-button button-flat button-round button-xlarge button-default button-1 buttonshadow-no fusion-animated" data-animationtype="slideInRight" data-animationduration="1" target="_blank" href=""><i class="fa fa-download button-icon-left"></i><span class="fusion-button-text">立即下载使用</span></a>
+           </div>
+          </div>
+          <div class="fusion-clearfix"></div>
+         </div>
+        </div>
+        <div class="fusion-fullwidth fullwidth-box" style="background-color:#303030;background-attachment:scroll;background-position:left top;background-repeat:repeat;border-color:#eae9e9;border-bottom-width: 0px;border-top-width: 0px;border-bottom-style: solid;border-top-style: solid;padding-bottom:20px;padding-left:200px;padding-right:200px;padding-top:20px;">
+         <div class="avada-row">
+          <div class="fusion-one-fourth one_fourth fusion-layout-column fusion-column spacing-yes">
+           <div class="fusion-column-wrapper">
+            <h5><span style="color: #ffffff;">最新发布</span></h5>
+            <div class="fusion-recent-works fusion-recent-works-1 layout-grid portfolio portfolio-four portfolio-grid" data-columns="four">
+             <div class="portfolio-wrapper" style="margin: -3px;">
+              <div class="portfolio-item portfolio-unboxed demos apps  col-spacing">
+               <div class="portfolio-item-wrapper">
+                <div class="image" aria-haspopup="true">
+                 <img title="" alt="" src="images/zxty-taob-220x161.jpg" />
+                 <div class="image-extras">
+                  <div class="image-extras-content">
+                   <a class="icon link-icon" href="" style="display:inline-block;"></a>
+                   <a class="icon gallery-icon" href="" data-rel="prettyPhoto[gallery_recent_1]" style="display:inline-block;"><img title="" alt="" style="display:none;" /></a>
+                   <h3><a href="">仿淘宝APP在线体验</a></h3>
+                   <h4><a href="" rel="tag">在线演示</a>, <a href="" rel="tag">应用</a></h4>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="portfolio-item portfolio-unboxed demos apps  col-spacing">
+               <div class="portfolio-item-wrapper">
+                <div class="image" aria-haspopup="true">
+                 <img title="" alt="" src="images/zxty-wangyi-220x161.jpg" />
+                 <div class="image-extras">
+                  <div class="image-extras-content">
+                   <a class="icon link-icon" href="" style="display:inline-block;"></a>
+                   <a class="icon gallery-icon" href="" data-rel="prettyPhoto[gallery_recent_1]" style="display:inline-block;"><img title="" alt="" style="display:none;" /></a>
+                   <h3><a href="">仿网易APP在线体验</a></h3>
+                   <h4><a href="" rel="tag">在线演示</a>, <a href="" rel="tag">应用</a></h4>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="portfolio-item portfolio-unboxed demos apps  col-spacing">
+               <div class="portfolio-item-wrapper">
+                <div class="image" aria-haspopup="true">
+                 <img title="" alt="" src="images/zxty-jizhang-220x161.jpg" />
+                 <div class="image-extras">
+                  <div class="image-extras-content">
+                   <a class="icon link-icon" href="" style="display:inline-block;"></a>
+                   <a class="icon gallery-icon" href="" data-rel="prettyPhoto[gallery_recent_1]" style="display:inline-block;"><img title="" alt="" style="display:none;" /></a>
+                   <h3><a href="">记账本APP在线体验</a></h3>
+                   <h4><a href="" rel="tag">在线演示</a>, <a href="" rel="tag">应用</a></h4>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="portfolio-item portfolio-unboxed demos apps  col-spacing">
+               <div class="portfolio-item-wrapper">
+                <div class="image" aria-haspopup="true">
+                 <img title="" alt="" src="images/zxty-tn-220x161.jpg" />
+                 <div class="image-extras">
+                  <div class="image-extras-content">
+                   <a class="icon link-icon" href="" style="display:inline-block;"></a>
+                   <a class="icon gallery-icon" href="" data-rel="prettyPhoto[gallery_recent_1]" style="display:inline-block;"><img title="" alt="" style="display:none;" /></a>
+                   <h3><a href="">仿途牛APP在线体验</a></h3>
+                   <h4><a href="" rel="tag">在线演示</a>, <a href="" rel="tag">应用</a></h4>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="fusion-one-sixth fusion-layout-column fusion-column spacing-yes">
+           <div class="fusion-column-wrapper">
+            <h5><span style="color: #ffffff;">产品和资源</span></h5>
+            <h6><span style="color: #b0b0b0;"><a style="color: #b0b0b0;" title="" href="" target="_blank">首页</a></span></h6>
+            <h6><span style="color: #b0b0b0;"><a style="color: #b0b0b0;" title="" href="" target="_blank">项目案例</a></span></h6>
+            <h6><span style="color: #b0b0b0;"><a style="color: #b0b0b0;" title="" href="" target="_blank">创业平台</a></span></h6>
+           </div>
+          </div>
+          <div class="fusion-one-sixth fusion-layout-column fusion-column spacing-yes">
+           <div class="fusion-column-wrapper">
+            <h5><span style="color: #ffffff;">服务和社区</span></h5>
+            <h6><span style="color: #b0b0b0;"><a style="color: #b0b0b0;" title="" href="" target="_blank">每周培训</a></span></h6>
+            <h6><span style="color: #b0b0b0;"><a style="color: #b0b0b0;" title="" href="" target="_blank">开发者论坛</a></span></h6>
+            <h6><span style="color: #b0b0b0;"><a style="color: #b0b0b0;" title="" href="" target="_blank">加入QQ群</a></span></h6>
+           </div>
+          </div>
+          <div class="fusion-one-sixth fusion-layout-column fusion-column spacing-yes">
+           <div class="fusion-column-wrapper">
+            <h5><span style="color: #ffffff;">中企科创</span></h5>
+            <h6><span style="color: #b0b0b0;"><a style="color: #b0b0b0;" title="关于我们" href="" target="_blank">关于我们</a></span></h6>
+            <h6><span style="color: #b0b0b0;"><a style="color: #b0b0b0;" title="招贤纳士" href="" target="_blank">招贤纳士</a></span></h6>
+            <h6><span style="color: #b0b0b0;"><a style="color: #b0b0b0;" title="加入我们" href="" target="_blank">加入我们</a></span></h6>
+           </div>
+          </div>
+          <div class="fusion-one-fourth one_fourth fusion-layout-column fusion-column last spacing-yes">
+           <div class="fusion-column-wrapper">
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep sep-none" style="border-color:#e0dede;margin-top:px;margin-bottom:20px;"></div>
+            <a title="开源中国" href="" target="_blank"><img title="" alt="" class="alignnone wp-image-3826 size-full" src="images/index-icon-zhonguo.png" width="29" height="29" /></a>&nbsp; &nbsp;
+            <a title="weibo" href="" target="_blank" rel=""><img title="" alt="index-icon-weibo" class="alignnone wp-image-380 size-full" src="images/index-icon-weibo.png" width="30" height="29" /></a>&nbsp; &nbsp;
+            <a title="facebook" href="" target="_blank"><img title="" alt="index-icon-facebook" class="alignnone size-full wp-image-378" src="images/index-icon-facebook.png" width="30" height="29" /></a>&nbsp; &nbsp;
+            <a href="" target="_blank"><img title="" alt="index-icon-twitter" class="alignnone size-full wp-image-379" src="images/index-icon-twitter.png" width="29" height="29" /></a>            
+            <p></p>
+            <h6><a href="images/wen-xin-2.png"><img title="" alt="wei-xin-2" class="aligncenter wp-image-386" src="images/wen-xin-2.png" width="100" height="100" /></a></h6>
+           </div>
+          </div>
+          <div class="fusion-clearfix"></div>
+          <h6 style="text-align: center;"><span style="color: #707070;"><a style="color: #707070;" href="">友情链接</a>&nbsp; &nbsp; &nbsp;|&nbsp; &nbsp;&nbsp;<a style="color: #707070;" href="">法律说明</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 深圳中企科创科技服务有限公司 &nbsp;&copy;2014-2016 &nbsp; &nbsp; &nbsp; &nbsp;深ICP备13007148号</span></h6>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> 
+
+<script type="text/javascript" src="js/modernizr-min.js?ver=3.7.3"></script> 
+<!--
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-min.js?ver=3.7.3"></script> 
+<script type="text/javascript" src="js/jquery.cycle.js?ver=3.7.3"></script> 
+<script type="text/javascript" src="js/jquery.prettyPhoto-min.js?ver=3.7.3"></script> 
+<script type="text/javascript" src="js/jquery.flexslider-min.js?ver=3.7.3"></script> 
+<script type="text/javascript" src="js/jquery.fitvids-min.js?ver=3.7.3"></script> -->
+<script type="text/javascript">/*  */
+var js_local_vars = {"protocol":"",
+                     "theme_url":"http:\/\/cbranch_zch",
+                     "dropdown_goto":"\u5230...",
+                     "mobile_nav_cart":"\u8d2d\u7269\u8f66",
+                     "page_smoothHeight":"false",
+                     "flex_smoothHeight":"false",
+                     "language_flag":"",
+                     "infinite_blog_finished_msg":"<em>\u6240\u6709\u663e\u793a\u7684\u6587\u7ae0<\/em>",
+                     "infinite_finished_msg":"<em>\u6240\u6709\u663e\u793a\u7684\u9879\u76ee<\/em>",
+                     "infinite_blog_text":"<em>\u88c5\u8f7d\u4e0b\u4e00\u7ec4\u6587\u7ae0...<\/em>",
+                     "portfolio_loading_text":"<em>\u88c5\u8f7d\u4f5c\u54c1\u9879\u76ee...<\/em>",
+                     "faqs_loading_text":"<em>\u88c5\u8f7d\u5e38\u89c1\u95ee\u9898\u9879\u76ee...<\/em>",
+                     "order_actions":"\u8be6\u60c5",
+                     "avada_rev_styles":"0",
+                     "avada_styles_dropdowns":"1",
+                     "blog_grid_column_spacing":"40",
+                     "blog_pagination_type":"Pagination",
+                     "custom_icon_image_retina":"",
+                     "disable_mobile_animate_css":"1",
+                     "portfolio_pagination_type":"Infinite Scroll",
+                     "header_position":"Top",
+                     "header_sticky":"1",
+                     "ipad_potrait":"0",
+                     "is_responsive":"1",
+                     "layout_mode":"wide",
+                     "lightbox_animation_speed":"Fast",
+                     "lightbox_autoplay":"0",
+                     "lightbox_desc":"1",
+                     "lightbox_deeplinking":"1",
+                     "lightbox_gallery":"1",
+                     "lightbox_opacity":"0.8",
+                     "lightbox_post_images":"1",
+                     "lightbox_slideshow_speed":"5000",
+                     "lightbox_social":"1",
+                     "lightbox_title":"1",
+                     "logo_alignment":"Left",
+                     "megamenu_max_width":"1100px",
+                     "pagination_video_slide":"0",
+                     "retina_icon_height":"",
+                     "retina_icon_width":"",
+                     "submenu_slideout":"1",
+                     "sidenav_behavior":"Hover",
+                     "site_width":"1250px",
+                     "slideshow_autoplay":"1",
+                     "slideshow_speed":"7000",
+                     "status_lightbox_mobile":"1",
+                     "status_totop_mobile":"0",
+                     "status_vimeo":"1",
+                     "status_yt":"1",
+                     "testimonials_speed":"4000",
+                     "tfes_animation":"sides",
+                     "tfes_autoplay":"1",
+                     "tfes_interval":"3000",
+                     "tfes_speed":"800",
+                     "tfes_width":"150",
+                     "woocommerce_shop_page_columns":"4",
+                     "mobile_menu_design":"classic",
+                     "isotope_type":"masonry",
+                     "page_title_fading":"0"};
+/*  */
+</script> 
+<script type="text/javascript" src="js/main.js?ver=3.7.3"></script>
+  <!--[if lte IE 8]> <script type="text/javascript" src="kc/kc-content/themes/avada/js/respond.js"></script> 
+<script type="text/javascript" src="/cbranch/kc/index/kc/kc-content/plugins/bwp-minfy/js/min.js"></script> 
+  <![endif]--> 
+  <!-- Dynamic page generated in 4.247 seconds. --> 
+  <!-- Cached page generated by WP-Super-Cache on 2015-12-26 17:08:08 --> 
+  <!-- super cache -->
+ </body>
+</html>
