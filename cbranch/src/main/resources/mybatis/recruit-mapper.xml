@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zqkc.dao.IRecruitDao" >
+          <!--添加招募  -->
+          <insert id="addRecruit" parameterType="Recruit" flushCache="true">
+          insert into recruit(id,job,title1,requirement,title2,qualification,sum,power,isdel)values(#{id},#{job},#{title1},#{requirement},#{title2},#{qualification},#{sum},#{power},#{isdel})
+          </insert>
+          <!--删除招募  -->
+          <!--  
+          <delete id="deleteRecruit" parameterType="int" > 
+          delete from recruit where id=#{id}
+          </delete>-->
+          <update id="deleteRecruit" parameterType="int" >
+          update recruit set isdel=1 where id =#{id}
+          </update>
+          <!--批量删除招募  -->
+          <!--  
+          <delete id="deleteAllRecruit" parameterType="int">
+          delete from recruit where id in
+          <foreach collection="array" item="id" open="(" separator="," close=")" >#{id}</foreach>
+          </delete>-->
+          <update id="deleteAllRecruit" parameterType="int">
+          update recruit set isdel=0 where id in
+          <foreach collection="array" item="id" open="(" separator="," close=")" >#{id}</foreach>
+          </update>
+          <!--修改招募  -->
+          <update id="updateRecruit" parameterType="Recruit" >
+          update recruit 
+          <trim prefix="set" suffixOverrides=",">
+          <if test="id!=null">id=#{id},</if>
+          <if test="job!=null">job=#{job},</if>
+          <if test="title1!=null">title1=#{title1},</if>
+          <if test="requirement!=null">requirement=#{requirement},</if>
+          <if test="title2!=null">title2=#{title2},</if>
+          <if test="qualification!=null">qualification=#{qualification},</if>
+          <if test="sum!=null">sum=#{sum},</if>
+          <if test="power!=null">power=#{power},</if>
+          <if test="isdel!=null">isdel=#{isdel},</if>
+          </trim>
+          where id=#{id}
+          </update>
+          <!--通过id查找招募  -->
+          <select id="findByIdRecruit" parameterType="int" resultType="Recruit">
+          select * from recruit where id=#{id} and isdel=1
+          </select>
+          <!--查找所有招募  -->
+          <select id="findAllRecruit"  resultType="Recruit">
+           select * from recruit where isdel=1
+          </select>
+          <!--查询招募信息总条数  -->
+          <select id="countRecruit" resultType="int">
+           select count(id) from recruit where isdel=1
+          </select>
+</mapper>

@@ -1,0 +1,60 @@
+package com.zqkc.service;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.zqkc.model.Business;
+
+/**
+ * 
+ * @author hw 业务Service层接口
+ *
+ */
+@Component
+public interface IBusinessService {
+
+	/**
+	 * 
+	 * @param business
+	 * @return
+	 * @throws SQLException
+	 */
+	public boolean doAddBusiness(Business business) throws SQLException; 
+	/**
+	 * 
+	 * @param id
+	 * @return
+	 * @throws SQLException
+	 */
+	public boolean doDeleteBusiness(int id) throws SQLException; 
+	
+	/**
+	 * 
+	 * @param id
+	 * @return
+	 * @throws SQLException
+	 */
+	public boolean doUpdateBusiness(Business business) throws SQLException; 
+	
+	/**
+	 * 
+	 * @param id
+	 * @return
+	 * @throws SQLException
+	 */
+	public Business findBusinessById(int id) throws SQLException; 
+	
+	/**
+	 * 
+	 * @return
+	 * @throws SQLException
+	 */
+	public List<Business> findBusinessAll() throws SQLException; 
+	/**
+	 * 获取业务数量统计值
+	 * @return
+	 */
+	public int countBusiness();
+}

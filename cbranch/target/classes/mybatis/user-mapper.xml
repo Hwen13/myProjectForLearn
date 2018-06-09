@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zqkc.dao.IUserDao">
+	   <!-- 保存 -->
+	   <insert id="save" parameterType="User" flushCache="true">
+	      insert into user (account,password,loginip,logintime,islock,status,isdel) values (#{account},#{password},#{loginip},#{logintime},#{islock},#{status},#{isdel})
+	   </insert>
+	 
+	   <!-- 登录 -->
+	   <select id="login" parameterType="User" resultType="User">
+	     select id,account,password,islock,isdel,status from user where account = #{account} and password = #{password} and isdel = #{isdel} and status= #{status}
+	     and islock = #{islock}
+	   </select>  
+	   
+	   <!--查询登录者信息-->
+	   <select id="listUserInformation" parameterType="User" resultMap="uiMap">
+	     select ui.*,u.id,u.account,u.loginip
+	     from userInformation ui,user u 	     
+	     where ui.u_account=u.account and u.account = #{account} and u.isdel = #{isdel} 
+	   </select>    
+	    <resultMap type="UserInformation" id="uiMap">
+        <!-- property 表示com.mybatis.bean.StudentTemp中的属性； column 表示表中的列名 -->
+        <id property="id" column="id" />
+        <result property="name" column="name" />
+        <result property="sex" column="sex" />
+        <result property="resume" column="resume" />
+        <result property="changeContent" column="changeContent" />
+        <result property="u_account" column="u_account" />
+        <result property="u_password" column="u_password" />
+        <result property="isdel" column="isdel" />
+        <result property="power" column="power" />
+        <result property="islock" column="islock" />
+        <!-- association字面意思关联，这里只专门做一对一关联； property表示是com.mybatis.bean.StudentTemp中的属性名称； 
+            javaType表示该属性是什么类型对象 -->
+        <association property="users" javaType="User">
+            <!-- property 表示com.mybatis.bean.Class中的属性； column 表示表中的列名 -->
+         <id property="id" column="id" />
+        <result property="account" column="account" />
+        <result property="loginip" column="loginip" />
+        <!--<result property="logintime" column="logintime" javaType="java.sql.Timestamp" jdbcType="TIMESTAMP"/>
+        <result property="isdel" column="isdel" />
+        <result property="islock" column="islock" />
+        
+        <result property="status" column="status" />-->
+        </association>
+    </resultMap>
+	   
+	   <!-- 配套登录操作，修改用户数据的 -->
+	   <update id="update" parameterType="User">
+	     update user set loginip = #{loginip},logintime = #{logintime},islock = #{islock},          
+		      status = #{status} where id=#{id}	     
+	   </update>
+	  
+	   <!-- 用户 修改密码   -->
+	   <update id="changePwd" parameterType="User">
+	   	 update user
+	      <set>
+		      <if test="password != null"> password = #{password}</if>		              
+	      </set>
+	    	where id=#{id}	
+	   </update>
+	   <!-- 用户列表 -->
+	   <select id="list" resultType="User">
+	     select * from user where isdel=1
+	   </select>
+	   <!-- 统计注册用户数 -->
+	   <select id="getUsers" resultType="int">
+	     select count(id) from user
+	   </select>
+	   <!-- 删除用户 -->
+	   <update id="delete" parameterType="int">
+	     update user set isdel = 0 where id=#{id}
+	   </update>
+</mapper>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zqkc.dao.IBusinessDao">
+	<!-- 添加项业务 -->
+	<insert id="addBusiness" parameterType="Business">
+		insert into business (title,description,remark,isdel,power) values (#{title},#{description},#{remark},#{isdel},#{power})
+	</insert>
+	<!-- 删除业务 -->
+	<delete id="deleteBusiness" parameterType="int">
+		delete * from business where id=#{id}
+	</delete>
+	<!-- 修改业务 -->
+	<update id="updateBusiness" parameterType="Business">
+		update business
+		<set>
+			<if test="title != null">title=#{title},</if>
+			<if test="description != null">description=#{description},</if>
+			<if test="remark != null">remark=#{remark},</if>
+			<if test="power != null">power=#{power},</if>
+			<if test="isdel != null">isdel=#{isdel}</if>
+		</set>
+		where id=#{id}
+	</update>
+	<!-- 根据ID查询业务 -->
+	<select id="findBusinesstById" parameterType="int" resultType="Business">
+		select * from business where id=#{id}
+	</select>
+	<!-- 查找所有业务 -->
+	<select id="findBusinessAll" parameterType="Business" resultType="Business">
+		select * from business order by power
+	</select>
+</mapper>

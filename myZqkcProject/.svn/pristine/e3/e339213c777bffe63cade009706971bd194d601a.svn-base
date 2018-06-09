@@ -1,0 +1,85 @@
+/**
+ * 
+ */
+package com.zqkc.controller;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.zqkc.service.impl.NavigationService;
+
+/**
+ * @author Administrator
+ *
+ */
+@Controller
+@RequestMapping("/navigation")
+public class NavigationController {
+	
+	@Autowired
+	private  NavigationService navigationService;
+	
+	
+	public void setNavigationService(NavigationService navigationService) {
+		this.navigationService = navigationService;
+	}
+	
+	
+	/*****************************页面跳转**********************************/
+	
+	/**
+	 * 进入导航栏列表页面
+	 * @param session
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/toNavigation")
+	public ModelAndView toNavigation(HttpSession session) throws Exception{
+		ModelAndView md = new ModelAndView();
+		String test = "www.baidu.com";
+		md.addObject("test", test);
+		md.setViewName("navigation_list");
+		return md;
+	}
+	
+	/**
+	 * 添加导航栏列表页面
+	 * @param session
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/addNavigation")
+	public ModelAndView addNavigation(HttpSession session) throws Exception{
+		ModelAndView md = new ModelAndView();				
+		md.setViewName("navigation_add");
+		return md;
+	}
+	
+	/**
+	 * 更新导航栏页面
+	 * @param session
+	 * @return
+	 * @throws Exception
+	 */
+	@RequestMapping("/updateNavigation")
+	public ModelAndView updateNavigationList(HttpSession session) throws Exception{
+		ModelAndView md = new ModelAndView();
+	
+		md.setViewName("navigation_update");
+		return md;
+	}
+	
+	/***************************业务数据处理***************************************/
+	
+	
+	
+	
+
+	
+
+	
+}

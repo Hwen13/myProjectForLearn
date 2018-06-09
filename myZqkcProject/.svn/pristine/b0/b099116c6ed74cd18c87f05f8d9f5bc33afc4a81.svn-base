@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zqkc.dao.IProjectDao">
+	<!-- 添加项目案例 -->
+	<insert id="addProject" parameterType="Project">
+		insert into project (name,title,type,remark,url,path,power,isdel) values (#{name},#{title},#{type},#{remark},#{url},#{path},#{power},#{isdel})
+	</insert>
+	<!-- 删除项目案例 -->
+	<delete id="deleteProject" parameterType="int">
+		delete from project where id=#{id}
+	</delete>
+	<!-- 批量删除 -->
+	<delete id="deleteProjectMass" parameterType="int">
+		delete  from project where id in
+		<foreach item="id"  open="(" separator="," close=")" collection="array">#{id}</foreach>
+	</delete>
+	<!-- 修改项目案例 -->
+	<update id="updateProject" parameterType="Project">
+		update project set name=#{name},title=#{title},type=#{type},remark=#{remark},url=#{url},path=#{path},power=#{power},isdel=#{isdel} where id=#{id}
+	</update>
+	<!-- 根据ID查询项目案例 -->
+	<select id="findProjectById" parameterType="int" resultType="Project">
+		select * from project where id=#{id} order by power
+	</select>
+	<!-- 查找所有项目案例 -->
+	<select id="findProjectAll"  resultType="Project">
+		select * from project order by power
+	</select>
+</mapper>

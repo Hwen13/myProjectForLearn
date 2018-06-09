@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type-root>
+  <types>
+      <type>web应用</type>
+      <type>集成产品</type>
+      <type>云服务</type>
+      <type>组件</type>
+      <type>移动应用</type>
+  </types>
+</type-root>
