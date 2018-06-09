@@ -1,10 +1,13 @@
 server:
-  port: 1111
-
+  port: 9090
+ 
+logging:  
+      level: 
+        com.winter.mapper: DEBUG 
 spring:
     datasource:
         name: test
-        url: jdbc:mysql://127.0.0.1:3306/mytest?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+        url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
         username: root
         password: root
         # 使用druid数据源
@@ -26,6 +29,7 @@ spring:
 mybatis:
   mapper-locations: classpath:mapping/*.xml
   type-aliases-package: com.winter.model
+
 
 #pagehelper
 pagehelper:
